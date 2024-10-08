@@ -1,0 +1,90 @@
+@media (max-width: 950px) {
+    body {
+        grid-template-rows: repeat(4, max-content);
+    }
+    .hero {
+        grid-template-areas: 
+            "header"
+            "huddle"
+            "hero-mockup"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content repeat(2, 1fr);
+    }
+    .hero .huddle {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .hero .hero-mockup {
+        margin-top: 4rem;
+    }
+
+    .about .about-card {
+        flex-direction: column;
+        padding: 3rem;
+        gap: 1rem;
+    }
+    .about .about-card:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .get-started {
+        margin: 0 2rem;
+        padding: 3rem;
+    }
+
+    .footer {
+        grid-template-areas: 
+            "footer-logo"
+            "adress-info"
+            "navigation" 
+            "media"
+            "copyright"
+            "coded-by"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, max-content);
+        grid-gap: 3rem;
+        align-items: center;
+    }
+    .footer .navigation {
+        display: flex;
+        flex-direction: column;     
+    }
+    .footer .copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-rows: 120vh repeat(3, max-content);
+    }
+    h2, h3 {
+        font-size: 2.2rem;
+    }
+    .hero {
+        padding: 2rem;
+        background: url(../images/bg-hero-mobile.svg) no-repeat center center;
+        background-size: cover;
+        background-color: var(--HeroBgColor);
+    }
+    .hero .header {
+        flex-direction: column;
+        gap: 2rem;
+    }   
+    .about .about-card {
+        padding: 3rem;
+    }
+    .footer {
+        padding: 2rem;
+    }
+    .footer 
+    .adress-info {
+        padding: 0rem;
+    }
+    .adress-info p {
+        padding-right: 0;
+    }
+}

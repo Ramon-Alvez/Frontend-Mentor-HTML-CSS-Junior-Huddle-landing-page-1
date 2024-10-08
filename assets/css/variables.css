@@ -1,0 +1,11 @@
+:root {
+    --DefaultMargin: 6rem;
+    --AboutCardsMargin: 8rem;
+
+    --Button: hsl(322, 100%, 66%);
+    --ActiveState: hsl(322, 100%, 66%);
+    --HeroBgColor: hsl(193, 100%, 96%);
+    --DarkMainColor: hsl(192, 100%, 9%);
+    --LightMainColor: hsl(208, 11%, 55%);
+    --FontSize: 1.8rem;
+}
